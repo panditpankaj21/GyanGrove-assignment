@@ -1,0 +1,14 @@
+.location-container{
+    font-size: small;
+    display: flex;
+    align-items: center;
+}
+
+.location-icon{
+    color: #B0BABF;
+    margin-right: .6rem;
+}
+.next-icon{
+    color: gray;
+    margin-left: .3rem;
+}
