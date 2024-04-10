@@ -1,96 +1,39 @@
 
-/* main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
-    font-family: 'Roboto', sans-serif;
-  } */
   
-  .card {
-    width: 13rem;
-    height: 18rem;
-    border-radius: 10px;
-    overflow: hidden;
-    /* cursor: pointer; */
-    position: relative;
-    /* color: $color-primary-white; */
-    color: white;
-    /* box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2); */
-    margin-left: 20px;
-    margin-top: 20px;
-   
-    
-    
-    
-    /* p, a {
-      position: absolute;
-      opacity: 0;
-      max-width: 80%;
-      transition: opacity .3s ease-out;
-    }
-    
-    p {
-      inset: auto auto 80px 30px;
-    }
-    
-    a {
-      inset: auto auto 40px 30px;
-      color: inherit;
-      text-decoration: none;
-    } */
-    
-    /* &:hover h2 {
-      inset: auto auto 220px 30px;
-      transition: inset .3s ease-out;
-    }
-    
-    &:hover p, &:hover a {
-      opacity: 1;
-      transition: opacity .5s .1s ease-in;
-    }
-    
-    &:hover img {
-      transition: opacity .3s ease-in;
-      opacity: 1;
-    }
-  
-  }
-  
-  .material-symbols-outlined {
-    vertical-align: middle;
-  } */
+.card {
+  width: 13rem;
+  height: 18rem;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  margin-left: 20px;
+  margin-top: 20px;
 }
 img {
-    /* position: absolute; */
-    /* object-fit:fit; */
-    transform: scale(1.5);
-    /* object-fit: cover; */
-    width: 100%;
-    height: 100%; 
-    border: 2px red solid; 
-    /* top: 0;
-    left: 0;
-    opacity: 0.9;
-    transition: opacity .2s ease-out; */
-  }
+  transform: scale(1.5);
+  width: 100%;
+  height: 100%; 
+}
 
 .card-content{
-    position: absolute;
-    bottom: 0;
-    color: white;
-    border:blue 2px solid;
-    width: 100%;
-    background-color: rgb(8, 8, 8, .2);
+  position: absolute;
+  bottom: 0;
+  color: white;
+  width: 100%;
+  background-color: rgb(8, 8, 8, .01);
+  font-size: .52rem;
+  padding: .5rem;
 }
-/* h2 {
-    position: absolute;
-    inset: auto auto 30px 30px;
-    margin: 0;
-    transition: inset .3s .3s ease-out;
-} */
-.location{
-    position: absolute;
-    inset: auto auto 30px 30px;
+
+.card-item{
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+}
+.card-item>span{
+  font-size: 1rem;
+  color: rgb(223, 222, 222);
+}
+.second-item, .card-date{
+  color: rgb(187, 186, 186);
 }
