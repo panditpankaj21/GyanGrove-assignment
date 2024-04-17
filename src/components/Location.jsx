@@ -11,7 +11,7 @@ function Location({
     return(
         <div className="text-xs flex items-center" style={{fontSize:size}}>
             <IoLocationSharp 
-                className={`text-[#B0BABF] mr-2 ${className}`} 
+                className={`text-[#B0BABF]  ${className}`} 
             />
             {location}
             {
