@@ -8,7 +8,7 @@ function RecommendedShows(){
     useEffect(() => {
         async function fetchEvents(){
             try{
-                const response = await fetch("https://gg-backend-assignment.azurewebsites.net/api/Events?code=FOX643kbHEAkyPbdd8nwNLkekHcL4z0hzWBGCd64Ur7mAzFuRCHeyQ==&type=reco")
+                const response = await fetch(import.meta.env.VITE_UPCOMING_API_URL)
                 if(!response.ok){
                     throw new Error('Network response was not ok ' + response.statusText)
                 }
