@@ -68,7 +68,7 @@ function UpComingShow() {
                 </div>
                 <p className="underline cursor-pointer">see all</p>
             </div>
-            <div className="sm:grid flex flex-col gap-10 items-center sm:grid-cols-3 sm:gap-y-7">
+            <div className="sm:grid flex flex-col gap-10 items-center sm:grid-cols-3 sm:gap-y-7 mb-5">
                 {content.map((item, index) => {
                     if (index === content.length - 1) {
                         return <div ref={lastElementRef} key={index}><UpcomingCard item={item} /></div>;

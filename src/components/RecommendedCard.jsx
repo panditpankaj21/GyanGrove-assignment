@@ -1,7 +1,8 @@
 import {Location} from "./index.js"
+import { formateDate } from "../calc/formateDate.js";
 
 function RecommendedCard({item}){
- const {eventName, cityName, imgUrl, weather, distanceKm} = item;
+ const {eventName, cityName, imgUrl, date, weather, distanceKm} = item;
  const imageId = imgUrl.split('/')[5]
 
  return (
@@ -13,7 +14,7 @@ function RecommendedCard({item}){
         <div className="absolute text-white bottom-0 bg-black bg-opacity-5 text-[.52rem] p-2 w-full">
           <div className="flex items-center justify-between">
             <span className="text-sm">{eventName}</span>
-            <p className="text-gray-300">March 23, 2024</p>
+            <p className="text-gray-300 text-[.5rem]">{formateDate(date)}</p>
           </div>
           <div className="flex items-center justify-between text-gray-300">
             <Location  
